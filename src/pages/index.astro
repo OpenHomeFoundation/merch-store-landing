@@ -1,0 +1,100 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The Open Home Foundation merch store is temporarily closed while we migrate to a new provider."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Store Closed — Open Home Foundation</title>
+  </head>
+  <body>
+    <main>
+      <span class="badge">Temporarily closed</span>
+      <h1>We&rsquo;re moving!</h1>
+      <p>
+        The Open Home Foundation merch store is closed while we migrate to a
+        new provider. We&rsquo;ll be back soon &mdash; thanks for your
+        patience.
+      </p>
+      <a href="https://www.openhomefoundation.org">Visit the Open Home Foundation</a>
+    </main>
+  </body>
+</html>
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f8fafc;
+    --fg: #0f172a;
+    --muted: #475569;
+    --accent: #18bcf2;
+    --badge-bg: #e2e8f0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --fg: #f1f5f9;
+      --muted: #94a3b8;
+      --badge-bg: #1e293b;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+  }
+
+  main {
+    max-width: 32rem;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background: var(--badge-bg);
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 1rem 0 0.5rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  p {
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+  }
+
+  a {
+    color: var(--accent);
+    font-weight: 600;
+  }
+</style>
