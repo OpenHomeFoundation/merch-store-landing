@@ -15,8 +15,11 @@
   </head>
   <body>
     <header>
-      <!-- TODO: replace with the Open Home Foundation logo asset -->
-      <span class="wordmark">Open Home Foundation</span>
+      <img
+        class="logo"
+        src="https://brands.openhomefoundation.org/api/open-home-foundation/logo/screen/lockup/main/color/light/svg"
+        alt="Open Home Foundation"
+      />
     </header>
 
     <main>
@@ -111,12 +114,9 @@
     text-align: center;
   }
 
-  header .wordmark {
-    color: var(--heading);
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
+  header .logo {
+    width: clamp(14rem, 40vw, 18rem);
+    height: auto;
   }
 
   .card {
