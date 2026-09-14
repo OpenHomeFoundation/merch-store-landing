@@ -56,8 +56,7 @@
           >
         </div>
 
-        <!-- TODO: illustration asset goes here, e.g.
-        <img class="illustration" src="/moving.svg" alt="" /> -->
+        <img class="illustration" src="/moving.svg" alt="" />
       </section>
     </main>
 
@@ -170,8 +169,9 @@
   }
 
   .illustration {
-    flex: 0 0 16rem;
-    max-width: 100%;
+    flex: 0 0 auto;
+    width: min(40%, 18rem);
+    height: auto;
   }
 
   footer .tagline {
