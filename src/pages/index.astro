@@ -31,26 +31,9 @@
     <main>
       <section class="card">
         <div class="content">
-          <p class="eyebrow">
-            <!-- TODO: replace with the small icon asset -->
-            <svg
-              class="eyebrow-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-              <path d="M9 22V12h6v10"></path>
-            </svg>
-            Store temporarily closed
-          </p>
+          <h1>Store temporarily closed</h1>
 
-          <h1>Be right back&hellip;</h1>
+          <p class="subheading">Be right back&hellip;</p>
 
           <p>
             We&rsquo;re upgrading how we manage and ship your orders, which
@@ -141,27 +124,19 @@
     max-width: 34rem;
   }
 
-  .eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0;
-    color: var(--accent);
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-
-  .eyebrow-icon {
-    width: 1.1rem;
-    height: 1.1rem;
-  }
-
   h1 {
-    margin: 0.5rem 0 1rem;
+    margin: 0 0 0.5rem;
     color: var(--heading);
     font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+
+  .subheading {
+    margin: 0 0 1.25rem;
+    color: var(--accent);
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
 
   p {
