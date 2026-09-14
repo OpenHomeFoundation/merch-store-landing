@@ -64,8 +64,8 @@
           >
         </div>
 
-        <!-- TODO: replace with the illustration asset -->
-        <div class="illustration" aria-hidden="true"></div>
+        <!-- TODO: illustration asset goes here, e.g.
+        <img class="illustration" src="/moving.svg" alt="" /> -->
       </section>
     </main>
 
@@ -78,7 +78,7 @@
 
 <style>
   :root {
-    --bg: #f0f0ea;
+    --bg: #ededed;
     --card: #ffffff;
     --heading: #253746;
     --text: #5f6b76;
@@ -122,16 +122,16 @@
   .card {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     max-width: 52rem;
     padding: 3rem;
     background: var(--card);
     border-radius: 1rem;
-    box-shadow: 0 10px 30px rgb(37 55 70 / 0.08);
   }
 
   .content {
-    flex: 1;
+    max-width: 34rem;
   }
 
   .eyebrow {
@@ -189,8 +189,7 @@
 
   .illustration {
     flex: 0 0 16rem;
-    min-height: 18rem;
-    /* asset drops in here, e.g. background: url('/moving.svg') no-repeat center / contain; */
+    max-width: 100%;
   }
 
   footer .tagline {
