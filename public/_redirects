@@ -1,6 +1,7 @@
 # Serve the page's own assets normally
-/favicon.svg  /favicon.svg  200
-/moving.svg   /moving.svg   200
+/favicon-light.png  /favicon-light.png  200
+/favicon-dark.png   /favicon-dark.png   200
+/moving.svg         /moving.svg         200
 
 # Every other URL (including /) serves the landing page with a 503,
 # so crawlers treat the closure as temporary and keep existing
