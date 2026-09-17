@@ -40,10 +40,21 @@
           "na-store.openhomefoundation.org",
         ];
         if (sites.indexOf(host) === -1) return;
+        // Queue stub (kept by the wrapper's own || guard): lets us fire
+        // events before Plausible finishes loading; the queue is flushed
+        // once it has.
+        window.plausible =
+          window.plausible ||
+          function () {
+            (window.plausible.q = window.plausible.q || []).push(arguments);
+          };
         var s = document.createElement("script");
         s.async = true;
         s.src = "https://www.openhomefoundation.org/plausible.js?site=" + host;
         document.head.appendChild(s);
+        // Tag this traffic so closure-page hits are distinguishable in
+        // each property.
+        window.plausible("Notice page");
       })();
     </script>
   </head>
