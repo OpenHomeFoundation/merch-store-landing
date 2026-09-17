@@ -29,6 +29,23 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap"
     />
     <title>Store temporarily closed — Open Home Foundation</title>
+    <script is:inline>
+      // Both store domains point at this landing page. Load the OHF
+      // Plausible wrapper with the current hostname as the site key, so
+      // each domain keeps reporting to its own Plausible property.
+      (function () {
+        var host = location.hostname.replace(/^www\./, "");
+        var sites = [
+          "store.openhomefoundation.org",
+          "na-store.openhomefoundation.org",
+        ];
+        if (sites.indexOf(host) === -1) return;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.openhomefoundation.org/plausible.js?site=" + host;
+        document.head.appendChild(s);
+      })();
+    </script>
   </head>
   <body>
     <header>
